@@ -2,9 +2,9 @@
 import re
 N = int(input())
 
-pattern = r'<a href="(.*?)".*?>([\w ,./]*)(?=</)'
+pattern = r'<a href="(.*?)".*?>([\w\s,./]*)(?=</)'
 
-for element in range(N):
+for each_element in range(N):
     element = input()
     tags = re.findall(pattern, element)
 
