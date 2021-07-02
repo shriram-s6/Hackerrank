@@ -12,7 +12,7 @@ select distinct(city) from station where (city not like 'A%' and
                                            city not like '%o' and
                                            city not like '%u');
 
-/ * Another solution:
+/* Another solution:
 
 select distinct(city) from station where regexp_like(city, '^[^AEIOU]|[^aeiou]$');
 
